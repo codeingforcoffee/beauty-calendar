@@ -1,0 +1,28 @@
+:root {
+  --pg-bg: #06080f;
+  --pg-panel: #0c1120;
+  --pg-border: rgba(148, 163, 184, 0.16);
+  --pg-text: #e8eefc;
+  --pg-text-dim: #93a1bd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  background:
+    radial-gradient(80% 60% at 100% 0%, rgba(99, 102, 241, 0.12), transparent 60%),
+    radial-gradient(70% 60% at 0% 100%, rgba(34, 211, 238, 0.1), transparent 55%),
+    var(--pg-bg);
+  color: var(--pg-text);
+  -webkit-font-smoothing: antialiased;
+}

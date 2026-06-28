@@ -1,0 +1,68 @@
+// Design tokens for the Beauty Calendar — a "tech / sci-fi" aesthetic.
+// All values are CSS custom properties so a single root element can be re-themed
+// at runtime. Accent colors (--bc-accent / --bc-accent-2) are injected inline by
+// the root component; everything else is derived from the color scheme below.
+
+.beauty-calendar {
+  // --- accent (overridden inline per theme) ---
+  --bc-accent: #22d3ee;
+  --bc-accent-2: #6366f1;
+  --bc-accent-grad: linear-gradient(135deg, var(--bc-accent), var(--bc-accent-2));
+  --bc-accent-soft: color-mix(in srgb, var(--bc-accent) 16%, transparent);
+  --bc-accent-faint: color-mix(in srgb, var(--bc-accent) 8%, transparent);
+  --bc-glow: color-mix(in srgb, var(--bc-accent) 45%, transparent);
+
+  // --- geometry ---
+  --bc-hour-height: 56px;
+  --bc-radius-sm: 6px;
+  --bc-radius-md: 10px;
+  --bc-radius-lg: 16px;
+  --bc-gutter-width: 64px;
+
+  // --- typography ---
+  --bc-font: "Inter", "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  --bc-fs-xs: 11px;
+  --bc-fs-sm: 12px;
+  --bc-fs-md: 13px;
+  --bc-fs-lg: 15px;
+  --bc-fs-xl: 18px;
+
+  // --- dark scheme (default) ---
+  --bc-bg: #0a0e1a;
+  --bc-bg-panel: #0d1322;
+  --bc-bg-elev: #131b2e;
+  --bc-bg-hover: color-mix(in srgb, var(--bc-accent) 6%, transparent);
+  --bc-grid-line: rgba(148, 163, 184, 0.1);
+  --bc-grid-line-strong: rgba(148, 163, 184, 0.18);
+  --bc-border: rgba(148, 163, 184, 0.16);
+  --bc-border-strong: rgba(148, 163, 184, 0.28);
+  --bc-text: #e8eefc;
+  --bc-text-dim: #9fb0cc;
+  --bc-text-faint: #5d6b85;
+  --bc-today-bg: color-mix(in srgb, var(--bc-accent) 7%, transparent);
+  --bc-now: #ff5c7c;
+  --bc-event-text: #061018;
+  --bc-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  --bc-scrollbar: rgba(148, 163, 184, 0.25);
+  color-scheme: dark;
+
+  &[data-scheme="light"] {
+    --bc-bg: #f4f7fe;
+    --bc-bg-panel: #ffffff;
+    --bc-bg-elev: #ffffff;
+    --bc-bg-hover: color-mix(in srgb, var(--bc-accent) 9%, transparent);
+    --bc-grid-line: rgba(15, 23, 42, 0.07);
+    --bc-grid-line-strong: rgba(15, 23, 42, 0.12);
+    --bc-border: rgba(15, 23, 42, 0.1);
+    --bc-border-strong: rgba(15, 23, 42, 0.18);
+    --bc-text: #0f1c33;
+    --bc-text-dim: #475569;
+    --bc-text-faint: #94a3b8;
+    --bc-today-bg: color-mix(in srgb, var(--bc-accent) 10%, transparent);
+    --bc-now: #ef4444;
+    --bc-event-text: #ffffff;
+    --bc-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+    --bc-scrollbar: rgba(15, 23, 42, 0.2);
+    color-scheme: light;
+  }
+}
