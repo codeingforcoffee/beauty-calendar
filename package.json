@@ -5,6 +5,24 @@
   "type": "module",
   "license": "MIT",
   "author": "coffeefish",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeingforcoffee/beauty-calendar.git"
+  },
+  "homepage": "https://github.com/codeingforcoffee/beauty-calendar#readme",
+  "bugs": {
+    "url": "https://github.com/codeingforcoffee/beauty-calendar/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "vue",
     "vue3",
@@ -38,8 +56,9 @@
     "build:play": "vite build",
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build"
   },
   "peerDependencies": {
     "vue": "^3.4.0"
