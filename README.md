@@ -11,6 +11,8 @@ Day / Week / Month views · cross-day drag-create · move & resize · right-clic
 [![License: MIT](https://img.shields.io/badge/License-MIT-22d3ee.svg)](./LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-a855f7.svg)](#contributing)
 
+**English** · [简体中文](./README.zh-CN.md) · [繁體中文](./README.zh-TW.md) · [日本語](./README.ja.md)
+
 ![Beauty Calendar preview](./docs/preview.svg)
 
 </div>
