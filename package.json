@@ -1,5 +1,5 @@
 {
-  "name": "beauty-calendar",
+  "name": "@coffeefish/beauty-calendar",
   "version": "0.1.0",
   "description": "A sci-fi styled, drag-to-create calendar component for Vue 3 — day / week / month views with i18n and theme switching.",
   "type": "module",
