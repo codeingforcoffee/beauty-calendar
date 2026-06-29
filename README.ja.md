@@ -15,6 +15,8 @@
 
 ![Beauty Calendar preview](./docs/preview.svg)
 
+![Beauty Calendar デモ](./docs/calendar.gif)
+
 </div>
 
 ---

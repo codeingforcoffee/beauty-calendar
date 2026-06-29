@@ -15,6 +15,8 @@ Day / Week / Month views · cross-day drag-create · move & resize · right-clic
 
 ![Beauty Calendar preview](./docs/preview.svg)
 
+![Beauty Calendar demo](./docs/calendar.gif)
+
 </div>
 
 ---
